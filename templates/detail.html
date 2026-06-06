@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+{% endblock %}
 
 {% block title %}
     Post {{ single_post.id }}
@@ -6,10 +11,10 @@
 
 {% block content %}
     <h1>Post #{{single_post.id}}</h1><br/>
-    <h2>Title: {{single_post.title}}</h2><br/>
-    <h3>Subtitle: {{single_post.subtitle}}</h3><br/>
+    <h2>Book title: {{single_post.title}}</h2><br/>
+    <h3>Book author: {{single_post.subtitle}}</h3><br/>
     <span><strong>Date: {{ single_post.created_on}}</strong></span><br/>
-    <span><strong>Author: {{ single_post.author }}</strong></span>
+    <span><strong>Review by: {{ single_post.author }}</strong></span>
     <hr/>
     <p>{{ single_post.body }}</p>
     <br/>
