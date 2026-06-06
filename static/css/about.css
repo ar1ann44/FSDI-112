@@ -1,0 +1,13 @@
+body{
+    background-color: #f4efe6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    background-color: #f4efe6;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+    transition: 0.3s;
+}

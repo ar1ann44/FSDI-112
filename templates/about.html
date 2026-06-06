@@ -1,24 +1,96 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
 
 {% block title %}
-About Us 
+About Us
 {% endblock %}
 
 {% block content %}
-    <div class="container py-5">
+<div class="container py-5">
 
-        <div class="text-center mb-5">
-            <h1 class="fw-bold">About This Project</h1>
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">About This Project</h1>
 
-            <p class="lead">
-            Book Review is a space created for readers who love discovering new stories,
-            sharing opinions, and exploring unforgettable books.
-            </p>
+        <p class="lead">
+            A Django web application created for book lovers and readers
+        </p>
+    </div>
+
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+
+                <div class="card-body">
+                    <h3 class="card-title">Home Page <i class="bi bi-house-heart ms-1 me-3"></i></h3>
+
+                    <p class="card-text">
+                        The Home page is the main section of the website, here users can explore popular books and
+                        discover new stories through a simple design
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+
+                <div class="card-body">
+                    <h3 class="card-title">Contact Page <i class="bi bi-person-lines-fill ms-1 me-3"></i></h3>
+
+                    <p class="card-text">
+                        The Contact page contains personal contact information and allows visitors to get in touch with
+                        the creator of the project
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+
+                <div class="card-body">
+                    <h3 class="card-title">Post Page <i class="bi bi-file-earmark-post ms-1 me-3"></i></h3>
+
+                    <p class="card-text">
+                        The Post page displays all published book reviews. Users can read review titles, short
+                        descriptions, and click on “Continue reading...” to view the full review and see more about
+                        each book
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+
+                <div class="card-body">
+                    <h3 class="card-title">New Post Page <i class="bi bi-file-earmark-plus ms-1 me-3"></i></h3>
+
+                    <p class="card-text">
+                        The New Post page allows users to create a new book review. Users simply enter a
+                        title, subtitle, and description in the form, then click the create button to publish their post
+                    </p>
+                </div>
+
+            </div>
         </div>
 
     </div>
 
+</div>
 
-
+<div class="text-center py-5">
+    <p class="fs-5">"A reader lives a thousand lives before he dies. The man who never reads lives only one."</p>
+    <p class="text-secondary">— George R.R. Martin</p>
+</div>
 
 {% endblock %}

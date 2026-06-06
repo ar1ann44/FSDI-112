@@ -11,7 +11,7 @@
 
 {% block content %}
 
-<div class="container py-5">
+<div class="container py-3">
     <div class="row align-items-center mb-5">
 
         <div class="col-md-6">
@@ -32,6 +32,7 @@
             <img
                 src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2tzfGVufDB8fDB8fHww"
                 class="img-fluid rounded shadow"
+                style="max-height: 900px;"
                 alt="Books">
         </div>
 
@@ -41,13 +42,12 @@
 
     <div class="row g-4">
 
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="card h-100 shadow-sm">
 
                 <img
                     src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1668782119i/40097951.jpg"
-                    class="card-img-top"
-                >
+                    class="card-img-top">
 
                 <div class="card-body">
                     <h5 class="card-title">The Silent Patient</h5>
@@ -56,15 +56,12 @@
                         A psychological thriller full of mystery and unexpected twists.
                     </p>
 
-                    <a href="#" class="btn btn-dark">
-                        Read Review
-                    </a>
                 </div>
 
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="card h-100 shadow-sm">
 
                 <img
@@ -79,15 +76,32 @@
                         Learn how small habits can transform how you live your live.
                     </p>
 
-                    <a href="#" class="btn btn-dark">
-                        Read Review
-                    </a>
                 </div>
 
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760108254i/242609198.jpg"
+                    class="card-img-top"
+                >
+
+                <div class="card-body">
+                    <h5 class="card-title">Frankenstein</h5>
+
+                    <p class="card-text">
+                        The classic tale of ambition, creation, and its consequences.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
             <div class="card h-100 shadow-sm">
 
                 <img
@@ -102,8 +116,6 @@
                         One of the greatest science fiction novels ever written.
                     </p>
 
-                    <a href="#" class="btn btn-dark">
-                        Read Review
                     </a>
                 </div>
 
@@ -112,6 +124,12 @@
 
     </div>
 
+</div>
+
+
+<div class="text-center py-5">
+    <p class="fs-5">"The more that you read, the more things you will know."</p>
+    <p class="text-secondary">— Dr. Seuss</p>
 </div>
 
 {% endblock %}
