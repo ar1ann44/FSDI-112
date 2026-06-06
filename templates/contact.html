@@ -1,15 +1,36 @@
 {% extends 'base.html'%}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
 
 {% block title %}
 Contact Us
 {% endblock %}
 
 {% block content %}
-    <h1>Contact us</h1>
-    <div>
-        <span><strong>Name:</strong> {{ name }} </span><br/>
-        <span><strong>Address:</strong> {{ address }} </span><br/>
-        <span><strong>Email:</strong> {{ email }} </span><br/>
+    <div class="container py-5">
+        <h1 class="fw-bold mb-4">Contact</h1>
+
+        <img 
+        src="{% static 'images/avatar.png' %}" 
+        width="150" height="150"
+        class="mb-4" alt="Avatar">
+    
+        <p><i class="bi bi-person me-2"></i><strong>Name:</strong> Ariana Osuna</p>
+        <p><i class="bi bi-geo-alt me-2"></i><strong>Address:</strong> 1095 K Street, Suite B San Diego, CA, 92101</p>
+        <p><i class="bi bi-envelope me-2"></i><strong>Email:</strong> ariana.osuna.311@gmail.com</p>
+        <p><i class="bi bi-chat-left-text me-2"></i><strong>About:</strong> Full stack development student at SDGKU. Book lover and Django developer!</p>
+        <p><i class="bi bi-github me-2"></i><strong>GitHub:</strong> <a href="https://github.com/ar1ann44/FSDI-112.git" target="_blank">https://github.com/ar1ann44/FSDI-112.git</a></p>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sit odit beatae quod, nisi ratione.</p>
+
+    <div class="text-center py-5">
+        <p class="fs-5">"A book is a gift you can open again and again."</p>
+        <p class="text-secondary">— Garrison Keillor</p>
+    </div>
+
+    <div style="min-height: 30px;"></div>
+
+
 {% endblock %}
