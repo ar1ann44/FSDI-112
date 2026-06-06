@@ -10,10 +10,15 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Create new post</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Create" class="btn btn-success">
-    </form>
+    <div class="container py-5" style="max-width: 500px;">
+        <h1 class="fw-bold mb-4">Create new post</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_div }}
+        <input type="submit" value="Create" class="btn btn-dark mt-3">
+        </form>
+    </div>
+
+    <div style="min-height: 190px;"></div>
+
 {% endblock content %}
